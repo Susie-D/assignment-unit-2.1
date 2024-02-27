@@ -59,20 +59,21 @@ console.log(allowedPets);
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!",
 //      if it's not true,  set `result` to be "How about we stay home?"
-let result = true;
-if (result) {
-  console.log("Adventures are great!");
+let result;
+if (adventurous === true) {
+  result = "Adventures are great!";
 } else {
-  console.log("How about we stay home?");
+  result = "How about we stay home?";
 }
 //      Console log the value of `result`
+console.log(result);
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional:
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 let diceRoll = "Try again later.";
-if (luckyNumber == 2 && adventurous) {
+if (luckyNumber === 2 && adventurous) {
   diceRoll = "Roll the dice!";
 }
 //      Console log the value of `diceRoll`
@@ -93,7 +94,7 @@ let petStatus;
 if (pets < allowedPets) {
   petStatus = "I can have more pets.";
   console.log(petStatus);
-} else if (pets == allowedPets) {
+} else if (pets === allowedPets) {
   petStatus = "I have enough pets.";
   console.log(petStatus);
 } else if (pets > allowedPets) {
@@ -108,6 +109,13 @@ if (pets < allowedPets) {
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios.
 //      console.log `mostPets` after the conditional has run.
+
+// let mostPets;
+// if (pets < friendsPets) {
+//   console.log(mostPets);
+// } else if (pets < friendsPets) {
+//   console.log(mostPets);
+// }
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
